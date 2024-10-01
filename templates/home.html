@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Providers List</title>
+  </head>
+  <body>
+    <h1>Providers</h1>
+    <ul>
+      {% for provider in providers %}
+        <li>{{ provider[1] }}: {{ provider[3] }} cores, {{ provider[4] }} GB RAM, {{ provider[5] }} GB Storage, Core price: {{ provider[6] }} USD, RAM price: {{ provider[7] }} USD/GB, Storage price: {{ provider[8] }} USD/GB</li>
+      {% endfor %}
+    </ul>
+    <a href="{{ url_for('add_provider') }}">Add a new provider</a>
+  </body>
+</html>
