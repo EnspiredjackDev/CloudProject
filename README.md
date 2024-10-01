@@ -1,2 +1,1 @@
 # CloudProject
-print("hello world")
